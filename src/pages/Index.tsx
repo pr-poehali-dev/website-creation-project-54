@@ -4,12 +4,10 @@ import { Input } from '@/components/ui/input';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
-  const [redirectUrl, setRedirectUrl] = useState('https://example.com');
+  const [text, setText] = useState('');
 
   const handleRedirect = () => {
-    if (redirectUrl) {
-      window.location.href = redirectUrl;
-    }
+    window.location.href = 'https://example.com';
   };
 
   return (
@@ -25,16 +23,16 @@ const Index = () => {
           </h1>
           
           <p className="text-gray-600 text-lg">
-            Нажмите кнопку для перехода на целевую страницу
+            Введите текст и нажмите кнопку для перехода
           </p>
         </div>
 
         <div className="space-y-4 mb-6">
           <Input
-            type="url"
-            value={redirectUrl}
-            onChange={(e) => setRedirectUrl(e.target.value)}
-            placeholder="https://example.com"
+            type="text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Введите текст"
             className="text-center"
           />
         </div>
@@ -49,7 +47,7 @@ const Index = () => {
         </Button>
 
         <p className="text-sm text-gray-500 mt-6">
-          Вы будете перенаправлены на указанный адрес
+          Вы будете перенаправлены на целевую страницу
         </p>
       </div>
     </div>
