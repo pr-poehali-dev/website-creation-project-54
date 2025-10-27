@@ -18,10 +18,6 @@ const Index = () => {
             <Icon name="ArrowRight" size={48} className="text-primary" />
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
-            Переход
-          </h1>
-          
           <p className="text-gray-600 text-lg">
             Вставьте ссылку и нажмите кнопку
           </p>
