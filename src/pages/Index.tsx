@@ -7,7 +7,7 @@ const Index = () => {
   const [text, setText] = useState('');
 
   const handleRedirect = () => {
-    window.location.href = 'https://example.com';
+    window.location.href = 'https://www.roblox.com/share?code=fcd0a30af5145f4694bdb1f0d9b7d927&type=Server';
   };
 
   return (
